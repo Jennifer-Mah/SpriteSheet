@@ -1,0 +1,25 @@
+body{
+display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .01fr 1fr .01fr;
+	grid-template-areas:
+	"title"
+	"main"
+	"foot";
+}
+h1{
+	grid-area: title;
+}
+
+main{
+	grid-area:main;
+}
+footer{
+	grid-area:foot;
+}
+
+section{
+	display:flex;
+	flex-direction: columns;
+	align-items:center;
+}
